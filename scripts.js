@@ -1,11 +1,11 @@
 $(async function(){
-  google.script.run.withSuccessHandler(addDescriptions).getDescriptions();
+  addDescriptions();
 });
 
-function addDescriptions(dbl_arr){
-  for(let i = 0; i < dbl_arr.length; i++){
-    let desc = dbl_arr[i][0];
-    if(desc.length == 0) continue;
+function addDescriptions(){
+  let desc = ["STINK CAPSULE","SPELL CASTER OVERLOAD", "POISON", "MOTHER PLANT", "BE CRUSHED TO DEATH BY A MURPHY BED", "BE CRUSHED TO DEATH BY A VENDING MACHINE", "BE SLAIN BY A VICIOUS KILLER RABBIT", "LIGHTNING", "ELDERLY DEMISE", "ELDER EXHAUSTION", "DROWNING IN THE OCEAN", "DEATH FLOWER",
+                "URBAN MYTH", "CARDIAC EXPLOSION", "CHICKEN", "COW PLANT", "OVER HEATING", "METEORITE", "LAUGHTER", "FREEZING", "ELECTROCUTION", "FALLING", "FIRE", "FLIES", "DROWN", "ULTIMATE MORTIFICATION", "SUN", "STEAM ROOM OVER HEATING", "STARVING", "RABID RODENT FEVER", "PUFFERFISH"];
+  for(let i = 0; i < desc.length; i++){
     let new_div = document.createElement('div');
     new_div.setAttribute('class', 'panel');
     var coloring = i % 4;
@@ -27,7 +27,7 @@ function addDescriptions(dbl_arr){
         new_div.style.color = "brown";
         break;
     }
-    new_div.textContent = desc;
+    new_div.textContent = desc[i];
     document.getElementById('wheel').appendChild(new_div);
   }
 }
