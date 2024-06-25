@@ -1,5 +1,6 @@
 .wheel{
   position: absolute;
+  max-width: 40%;
   width: 550px;
   left: 38%;
   top: -300px;
