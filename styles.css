@@ -66,8 +66,8 @@ body{
   z-index: 2;
   position: absolute;
   border-left: 120px solid orange; 
-  border-top: 90px solid transparent; 
-  border-bottom: 90px solid transparent; 
+  border-top: 60px solid transparent; 
+  border-bottom: 60px solid transparent; 
   border-right: 0; 
   top: 50%; 
   box-style: border-box; 
@@ -76,7 +76,7 @@ body{
 
 @media (max-width: 1700px){
     button{
-        position:absolute;
+        position:fixed;
         left: 5vw;
         width: 20vw;
         top: 5vh;
