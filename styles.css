@@ -76,6 +76,7 @@ body{
 
 @media (max-width: 1700px){
     button{
+        position:absolute;
         left: 5vw;
         width: 20vw;
         top: 5vh;
