@@ -1,5 +1,6 @@
 $(async function(){
   addDescriptions();
+  alignSelector();
 });
 
 function addDescriptions(){
@@ -84,4 +85,13 @@ function getResult(){
     if(e.className.includes('panel')) return e.textContent();
   }
   return "Error! Spin again!";
+}
+
+function alignSelector(){
+  var selector = document.getElementsByClassName('selector')[0];
+  var wheel = document.getElementById('wheel');
+  let rect = wheel.getBoundingClientRect();
+  let left = rect.left;
+  left = left - 60;
+  selector.style.left = left + "px";
 }
