@@ -1,0 +1,58 @@
+.wheel{
+  position: absolute;
+  width: 550px;
+  left: 38%;
+  top: -300px;
+}
+body, .panel{
+  display: flex;
+  justify-content: center;
+  align-items: middle;
+  
+}
+button{
+  margin: 0 auto;
+  height: 200px;
+  width: 300px;
+  font-size: 36px;
+}
+.prompt{
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+body{
+  overflow: noscroll;
+}
+.panel{
+  border: 1px solid black;
+  height: 200px;
+  font-size: 24px;
+  font-family: 'Impact', sans-serif;
+  flex-direction: column;
+  text-align: center;
+}
+.panel:nth-of-type(3n+0){
+  background-color: green;
+  color: #DDFFDD;
+}
+.panel:nth-of-type(3n+1){
+  background-color: blue;
+  color: cyan;
+}
+.panel:nth-of-type(3n+2){
+  background-color: red;
+  color: pink;
+}
+.selector{
+  z-index: 2;
+  position: absolute;
+  border-left: 120px solid orange; 
+  border-top: 90px solid transparent; 
+  border-bottom: 90px solid transparent; 
+  border-right: 0; 
+  left: 35%;
+  top: 50%; 
+  box-style: border-box; 
+  height: 0px;
+}
