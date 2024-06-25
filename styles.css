@@ -73,3 +73,18 @@ body{
   box-style: border-box; 
   height: 0px;
 }
+
+@media (max-width: 1700px){
+    button{
+        left: 5vw;
+        width: 20vw;
+        top: 5vh;
+        height: 15vh;
+        font-size: 24px;
+    }
+    .wheel{
+        right: 10vw;
+        max-width: 50vw;
+    }
+}
+    
