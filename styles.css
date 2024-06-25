@@ -24,6 +24,15 @@ button{
   background-color: yellow;
   font-weight: bold;
 }
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+button:active{
+    background-color: #0088DD;
+    color: white;
+}
+    
 .prompt{
   position: absolute;
   top: 35%;
