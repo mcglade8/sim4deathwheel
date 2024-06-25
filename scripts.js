@@ -80,8 +80,8 @@ function getResult(){
   let bottom = rect.bottom;
   let mid = (top + bottom)/2;
   let point = left + 120;
-  let elements = document.elementFromPoint(point, mid);
-  return e.innerHTML;
+  let panel = document.elementFromPoint(point, mid);
+  return panel.innerHTML;
 }
 
 function alignSelector(){
