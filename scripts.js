@@ -80,11 +80,8 @@ function getResult(){
   let bottom = rect.bottom;
   let mid = (top + bottom)/2;
   let point = left + 120;
-  let elements = document.elementsFromPoint(point, mid);
-  for(let e of elements){
-    if(e.className.includes('panel')) return e.textContent();
-  }
-  return "Error! Spin again!";
+  let elements = document.elementFromPoint(point, mid);
+  return e.innerHTML;
 }
 
 function alignSelector(){
