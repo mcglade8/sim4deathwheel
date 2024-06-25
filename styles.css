@@ -12,7 +12,7 @@ body, .panel{
   display: flex;
   justify-content: center;
   align-items: middle;
-  
+  background-color: #220055;
 }
 button{
   margin: 0 auto;
@@ -39,7 +39,7 @@ button:active{
   left: 5%;
 }
 body{
-  overflow: noscroll;
+  overflow: hidden;
 }
 .panel{
   border: 1px solid black;
