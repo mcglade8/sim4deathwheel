@@ -64,10 +64,9 @@ function spinWheel(speed = 5){
       count++;
 
     }else{
-      var result = getResult();
-      console.log("result: " + result);
-      alert(result);
       clearInterval(id);
+      var result = getResult();
+      alert(result);
     }
   }
 }
