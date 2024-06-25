@@ -63,8 +63,25 @@ function spinWheel(speed = 5){
       count++;
 
     }else{
-      console.log("count: " + count);
+      var result = getResult();
+      console.log("result: " + result);
+      alert(result);
       clearInterval(id);
     }
   }
+}
+
+function getResult(){
+  var selector = document.getElementsByClassName('selector')[0];
+  let rect = selector.getBoundingClientRect();
+  let left = rect.left;
+  let top = rect.top;
+  let bottom = rect.bottom;
+  let mid = (top + bottom)/2;
+  let point = left + 120;
+  let elements = elementsFromPoint(point, mid);
+  for(let e of elements){
+    if(e.className.includes('panel')) return e.textContent();
+  }
+  return "Error! Spin again!";
 }
