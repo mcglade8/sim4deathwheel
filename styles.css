@@ -8,7 +8,7 @@ html{
   position: absolute;
   max-width: 40%;
   width: 550px;
-  left: 38%;
+  right: 25%;
   top: -300px;
 }
 body, .panel{
@@ -38,7 +38,7 @@ button:active{
 .prompt{
   position: absolute;
   top: 35%;
-  left: 5%;
+  left: 25%;
 }
 body{
   overflow: hidden;
