@@ -1,6 +1,9 @@
 *{
     font-family: 'Impact', sans-serif;
 }
+html{
+      background-color: #220055;
+}
 .wheel{
   position: absolute;
   max-width: 40%;
@@ -12,7 +15,6 @@ body, .panel{
   display: flex;
   justify-content: center;
   align-items: middle;
-  background-color: #220055;
 }
 button{
   margin: 0 auto;
